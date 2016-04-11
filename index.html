@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang=en>
+<head>
+    <meta charset="utf-8">
+    <title>Form Validator</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+
+</head>
+    <body>
+        
+        <form class="contact_form" action="#" method="post" name="contact_form" onsubmit="return validateForm()">
+            <ul>
+                <li>
+                     <h2>From Validator</h2>
+                     <span class="required_notification">* Denotes Required Field</span>
+                </li>
+                <li>
+                    <label for="phone">Phone:</label>
+                    <input type="text" name="phone" placeholder="111-222-3333" />
+                </li>
+                <li>
+                    <label for="birthdate">Birth Date:</label>
+                    <input type="text" name="birthdate" placeholder="07/07/76"/>
+                    <span class="form_hint">Proper format "DD/MM/YY"</span>
+                </li>
+                <li>
+                    <label for="zipcode">Zip Code:</label>
+                    <input type="text" name="zipcode" placeholder="12345-1234" />
+                    <span class="form_hint">Proper format "XXXXX or XXXXX-XXXX"</span>
+                </li>
+                <li>
+                    <label for="state">State:</label>
+                    <input type="text" name="state" placeholder="TX"/>
+                </li>
+                 <li>
+                    <label for="married">Married?</label>
+                    <input type="text" name="married" placeholder="NO" />
+                </li>               
+                <li>
+                	<button class="submit" type="submit">Submit Form</button>
+                </li>
+            </ul>
+        </form>
+    
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
